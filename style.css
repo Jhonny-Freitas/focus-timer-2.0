@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #FFFFFF;
+
+    --primary-color: #323238;
+
+    --button-color: #E1E1E6;
+    --button-active-color: #02799D;
+    
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+
+    font-family: "Roboto", sans-serif;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+
+    display:grid;
+    min-height: 100vw;
+}
+
+main{
+    align-self: center;
+    justify-self: center;
+}
+
+.wrapper{
+    display: flex;
+    gap: 19.2rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.stopwatch{
+    align-self: center;
+    justify-self: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+#timer{
+    display: flex;
+}
+
+#controls{
+    display: flex;
+    gap: 4rem;
+    margin-top: 4.8rem;
+
+    justify-content: center;
+}
+
+#controls button{
+    background: none;
+    border: none;
+}
+
+#sound-buttons{
+    display: grid;
+    grid-template-columns: 13.8rem 13.8rem;
+    gap: 3.8rem;
+}
+
+#sound-buttons button{
+    background-color: var(--button-color);
+    border: none;
+
+    height: 15.2rem;
+    border-radius: 2.4rem;
+
+}
+
+
+#sound-buttons button.active-button{
+    background: var(--button-active-color);
+
+}
+
+.svg-button-white {
+    fill: white;
+  }
+
